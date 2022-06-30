@@ -21,21 +21,17 @@ h1,h2,h3,h4{
     color: rgba(197, 15, 36, 1.0);
 }
 
-.nav_all{
+.navbar .navbar-nav .nav-link:hover{
+    color: rgba(197, 15, 36, 1.0);
+    font-weight: 500;
+}
+
+.nav_bg{
     background-color: rgba(255, 255, 255, 1.0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
 }
 
-.nav_list ul li a{
-    font-size: 1rem;
-}
-
-.nav_button ul li a{
-    font-size: 1rem;
+.nav_bs ul li a{
+    font-size: 1.4rem;
 }
 
 header div nav ul li{
@@ -50,11 +46,6 @@ header div nav ul li a{
     padding: 2px;
 }
 
-header div nav ul li a:hover{
-    color: rgba(197, 15, 36, 1.0);
-    font-weight: 500;
-}
-
 header div div ul li{
     display: inline-block;
     margin: 8px;
@@ -67,14 +58,13 @@ header div div ul li a{
     padding: 2px;
 }
 
-header div div ul li a:hover{
-    color: rgba(197, 15, 36, 1.0);
-    font-weight: 500;
-}
-
 header{
     background-color: rgba(255, 255, 255, 0.8);
     overflow-x: hidden;
+}
+
+.c_img{
+    width: 107.2%;
 }
 
 .header_titulo{
@@ -82,10 +72,6 @@ header{
     font-weight: 800;
     font-style: italic;
     padding: 20px;
-}
-
-.header_img_fluid{
-    width: 106%;
 }
 
 main{
@@ -118,7 +104,7 @@ main{
 }
 
 .fig_center img{
-    width: 88%;
+    width: 90%;
 }
 
 .fig_t:hover{
@@ -179,6 +165,7 @@ footer{
 }
 
 .c_grid{
+    overflow-x: hidden;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
