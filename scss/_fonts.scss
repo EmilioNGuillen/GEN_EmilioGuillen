@@ -1,0 +1,42 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,800&display=swap";
+
+//vars fonts
+* {
+	font-family: $font-family_1;
+	margin: 0;
+	padding: 0;
+}
+
+//sizes
+$textSm:1em;
+$textMd:1.2em;
+$textLg:1.4em;
+$textXl:2em;
+
+html {
+	font-size: 62.5%;
+}
+body {
+	background-image: url(../img/bg/pattern.jpg);
+	background-attachment: fixed;
+}
+h1 {
+	font-family: $font-family_1;
+	font-weight: 500;
+	color: $color_1;
+}
+h2 {
+	font-family: $font-family_1;
+	font-weight: 500;
+	color: $color_1;
+}
+h3 {
+	font-family: $font-family_1;
+	font-weight: 500;
+	color: $color_1;
+}
+h4 {
+	font-family: $font-family_1;
+	font-weight: 500;
+	color: $color_1;
+}
