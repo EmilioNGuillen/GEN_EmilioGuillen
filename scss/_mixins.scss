@@ -1,0 +1,50 @@
+//mixins
+$breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+);
+
+@mixin breakpoint($size) {
+    @if map-has-key($breakpoints, $size) {
+        @media (min-width: #{map-get($breakpoints, $size)}) {
+            @content;
+        }
+    }
+}
+
+p{
+    @include breakpoint (xl){
+        font-size: 1.2rem;
+    }
+}
+
+@mixin texto ($size, $line-height, $color) {
+    font-size: $size;
+    line-height: $line-height;
+    color: $color;
+    padding: 4px;
+}
+
+h2{
+    @include texto(2.2em,2.4em,rgba(0, 0, 0, 1.0))
+}
+
+//extend
+%heading {
+    color: $color_1;
+    font-family: $font-family_1;
+}
+
+h1 {
+    @extend %heading;
+    font-size: 3em;
+}
+
+h2 {
+    @extend %heading;
+    font-size: 2em;
+}
+
