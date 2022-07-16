@@ -25,7 +25,14 @@
     <div class="c_grid">
         <header>
             <!-- inicia navbar -->
-            <nav class="navbar navbar-expand-lg navbar-light nav_bs nav_bg">
+    
+            <div>
+                <a class="navbar-brand logo_c mx-auto" href="../index.html">
+                    <img src="../img/icons/genlogo.png" alt="logo de gen">
+                </a> 
+            </div>
+    
+            <nav class="navbar navbar-expand-lg nav_bs nav_bg">
                 <div class="container-fluid">
                     
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +40,7 @@
                     </button>
     
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
                         
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="../pages/marcas.html">Marcas</a>
@@ -52,16 +59,9 @@
     
                         </ul>
                     </div>
-            <!-- termina navbar -->
-
-                    <div class="mx-auto" style="width: 50%;">
-                        <a class="navbar-brand" href="../index.html">
-                            <img src="../img/icons/genlogo.png" alt="logo de gen">
-                    </a>
-                    </div>
-    
                 </div>
             </nav>
+            <!-- termina navbar -->
 
         <h1 class="header_titulo wow bounceIn">PRODUCTOS</h1>
     </header>
@@ -69,7 +69,7 @@
     <main class="main_g">
         <!-- inicia productos -->
         <section>
-            <div class="destacados_productos wow fadeInDown">
+            <div class="destacados_productos wow fadeInDown container">
                 <figure class="fig_center fig_t">
                     <img src="../img/productos/boxersck.jpg" alt="boxers calvin klein">
                     <figcaption>
@@ -93,7 +93,7 @@
                 </figure>
             </div>
             <br>
-            <div class="destacados_productos wow fadeInDown">
+            <div class="destacados_productos wow fadeInDown container">
                 <figure class="fig_center fig_t">
                     <img src="../img/productos/adidasyeezy.jpg" alt="adidas yeezy">
                     <figcaption>Adidas Yeezy 350 v2
@@ -117,7 +117,7 @@
                 </figure>
             </div>
             <br>
-            <div class="destacados_productos wow fadeInDown">
+            <div class="destacados_productos wow fadeInDown container">
                 <figure class="fig_center fig_t">
                     <img src="../img/productos/buzofog.jpg" alt="buzo fog">
                     <figcaption>
@@ -167,21 +167,26 @@
             <br>
             <div>
                 <h4>Métodos de pago</h4>
-                <img src="../img/footer/mercadopago.png" alt="logo de mercadopago">
+                <img src="../img/footer/pagosvarios.png" alt="varias formas de pagos" class="footer_icon_mp">
             </div>
             <br>
             <div>
                 <h4>Redes sociales</h4>
                 <a href="httos://www.instagram.com/" target="_blank">
-                    <img src="../img/footer/logoig.png" alt="logo de instagram">
+                    <img src="../img/footer/logoig.png" alt="logo de instagram" class="footer_icon">
                 </a>
                 <a href="https://www.twitter.com/" target="_blank">
-                    <img src="../img/footer/logotw.png" alt="logo de twitter">
+                    <img src="../img/footer/logotw.png" alt="logo de twitter" class="footer_icon">
                 </a>
             </div>
         </div>
+
+        <div class="footer_cr">
+            <p>Copyright © 2022 GEN. All rights reserved.</p>
+        </div>
+
     </footer>
-    <!-- termina productos -->
+    <!-- termina footer -->
 </div>
 
 <script src="../js/wow.min.js"></script>

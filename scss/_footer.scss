@@ -1,6 +1,7 @@
 footer {
-	background-color: $background-color_1;
+	background-color: $background-color_4;
 }
+
 .footer_g {
 	div {
 		display: flex;
@@ -8,13 +9,34 @@ footer {
 		align-items: center;
 		justify-content: center;
 		padding: 5px 10px;
+		h4{
+			color: $color_5;
+		}
 		ul {
 			li {
 				list-style: none;
 				margin: 2px 20px;
 				padding: 2px;
+				color: $color_5;
 			}
 		}
 	}
 	grid-area: footer;
+}
+
+.footer_icon_mp{
+	width: 200px;
+	margin: 20px;
+}
+
+.footer_icon{
+	width: 45px;
+	margin: 8px;
+}
+
+.footer_cr{
+	background-color: $background-color_5;
+    p{
+		color: $color_5;
+	}
 }

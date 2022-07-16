@@ -28,7 +28,14 @@
 <div class="c_grid">
     <header>
         <!-- inicia navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light nav_bs nav_bg">
+
+        <div>
+            <a class="navbar-brand logo_c mx-auto" href="index.html">
+                <img src="img/icons/genlogo.png" alt="logo de gen">
+            </a> 
+        </div>
+
+        <nav class="navbar navbar-expand-lg nav_bs nav_bg">
             <div class="container-fluid">
                 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +43,7 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
                     
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="pages/marcas.html">Marcas</a>
@@ -56,13 +63,6 @@
                     </ul>
                 </div>
         <!-- termina navbar -->
-
-                <div class="mx-auto" style="width: 50%;">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="img/icons/genlogo.png" alt="logo de gen">
-                </a>
-                </div>
-
             </div>
         </nav>
 
@@ -133,29 +133,11 @@
         <!-- inicia formulario -->
         <div class="form">
             <div>
-                <form action="envio.php">
-                    <legend>Contacto</legend>
-                    <label for="name">Nombre</label>
-                    <br>
-                    <input type="text" id="name" placeholder="Emilio Guillen">
-                    <br>
-                    <label for="email">Email</label>
-                    <br>
-                    <input type="email" id="email" placeholder="emilionguillen@gmail.com">
-                    <br>
-                    <label for="noticias">¿Desea recibir noticias?</label>
-                    <input type="checkbox" id="noticias" value="si noticias">
-                    <br>
-                    <label for="text">Asunto</label>
-                    <br>
-                    <input type="text" name="asunto" placeholder="Consulta stock Nike">
-                    <br>
-                    <label for="mensaje">Mensaje</label>
-                    <br>
-                    <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
-                    <br>
-                    <input type="reset" value="Cancelar">
-                    <input type="submit" value="Enviar">
+                <form action="envio.php">     
+                    <input name="name" type="text" class="feedback-input" placeholder="Nombre" />   
+                    <input name="email" type="text" class="feedback-input" placeholder="Email" />
+                    <textarea name="text" class="feedback-input" placeholder="Mensaje"></textarea>
+                    <input type="submit" value="ENVIAR"/>
                 </form>
             </div>
             <!-- termina formulario -->
@@ -190,19 +172,24 @@
             <br>
             <div>
                 <h4>Métodos de pago</h4>
-                <img src="img/footer/mercadopago.png" alt="logo de mercadopago">
+                <img src="img/footer/pagosvarios.png" alt="varias formas de pagos" class="footer_icon_mp">
             </div>
             <br>
             <div>
                 <h4>Redes sociales</h4>
                 <a href="httos://www.instagram.com/" target="_blank">
-                    <img src="img/footer/logoig.png" alt="logo de instagram">
+                    <img src="img/footer/logoig.png" alt="logo de instagram" class="footer_icon">
                 </a>
                 <a href="https://www.twitter.com/" target="_blank">
-                    <img src="img/footer/logotw.png" alt="logo de twitter">
+                    <img src="img/footer/logotw.png" alt="logo de twitter" class="footer_icon">
                 </a>
             </div>
         </div>
+
+        <div class="footer_cr">
+            <p>Copyright © 2022 GEN. All rights reserved.</p>
+        </div>
+
     </footer>
     <!-- termina footer -->
 
