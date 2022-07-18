@@ -11,6 +11,7 @@ main {
 		}
 	}
 }
+
 .destacados_titulo {
 	text-align: center;
 	padding: 16px;
@@ -19,6 +20,7 @@ main {
 	padding: 20px;
 	color: $color_2;
 }
+
 .destacados_productos {
 	display: flex;
 	flex-direction: column;
@@ -26,6 +28,7 @@ main {
 	align-items: center;
 	animation-delay: 0.2s;
 }
+
 .fig_center {
 	text-align: center;
 	margin: 4px;
@@ -36,6 +39,7 @@ main {
 		width: 90%;
 	}
 }
+
 .fig_t {
 	&:hover {
 		transform: scale(1.1);
@@ -43,22 +47,33 @@ main {
 		transition: 0.5s;
 	}
 }
+
 .contacto_center {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-evenly;
 	font-size: $textMd;
 	line-height: 2rem;
 }
 
 .form {
+	background-image: url(../img/contacto/contactanos.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	font-size: $textMd;
 	line-height: 2rem;
+    padding-bottom: 180px;
+	padding-top: 158px;
+	h2{
+		text-align: center;
+		color: $color_5;
+		text-shadow: 2px 2px 20px $color_2;
+	}
 }
 
 .form_mapa {
@@ -66,5 +81,7 @@ main {
 	font-size: $textMd;
 	line-height: 2rem;
 	font-style: italic;
-	color: $color_3;
+	color: $color_5;
+    text-shadow: 2px 2px 20px $color_2;
+
 }

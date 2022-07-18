@@ -5,15 +5,19 @@
 	grid-template-rows: auto;
 	grid-template-areas: "nav" "header" "main" "footer";
 }
+
 .nav_g {
 	grid-area: nav;
 }
+
 .header_g {
 	grid-area: header;
 }
+
 .main_g {
 	grid-area: main;
 }
+
 @media (min-width: 768px) {
 	c_grid {
 		grid-template-columns: 20vw 80vw;
@@ -29,6 +33,7 @@
 		padding: 16px;
 	}
 }
+
 @media (min-width: 1024px) {
 	.destacados_productos {
 		display: flex;

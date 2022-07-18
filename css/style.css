@@ -7849,7 +7849,7 @@ h4, .h4 {
     font-weight: 500; }
 
 .logo_nav {
-  width: 9%; }
+  width: 160px; }
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
@@ -7888,13 +7888,14 @@ header {
       padding: 2px; }
 
 .c_img {
-  width: 100%; }
+  width: 101%; }
 
 .header_titulo {
   text-align: center;
   font-weight: 800;
   font-style: italic;
-  padding: 20px; }
+  padding-top: 20px;
+  padding-bottom: 15px; }
 
 main {
   background-color: rgba(255, 255, 255, 0.8); }
@@ -7935,26 +7936,36 @@ main {
 
 .contacto_center {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   font-size: 1.2em;
   line-height: 2rem; }
 
 .form {
+  background-image: url(../img/contacto/contactanos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 1.2em;
-  line-height: 2rem; }
+  line-height: 2rem;
+  padding-bottom: 180px;
+  padding-top: 158px; }
+  .form h2, .form .h2 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 20px black; }
 
 .form_mapa {
   text-align: center;
   font-size: 1.2em;
   line-height: 2rem;
   font-style: italic;
-  color: black; }
+  color: white;
+  text-shadow: 2px 2px 20px black; }
 
 form {
   max-width: 420px;
