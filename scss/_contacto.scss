@@ -28,7 +28,10 @@ textarea {
 	resize: vertical;
 }
 
-[type="submit"] {
+.button2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	font-family: $font-family_1;
 	width: 100%;
 	background: $color_3;
@@ -42,7 +45,9 @@ textarea {
 	transition: all 0.3s;
 	margin-top: -4px;
 	font-weight: 700;
+	text-decoration: none;
 	&:hover {
 		background: $color_4;
+		color: $color_5;
 	}
 }
