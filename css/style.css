@@ -243,6 +243,10 @@ footer {
 .footer_icon {
   width: 45px;
   margin: 8px; }
+  .footer_icon:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.5s; }
 
 .footer_cr {
   background-color: #232323; }
