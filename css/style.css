@@ -89,7 +89,7 @@ header {
 main {
   background-color: rgba(255, 255, 255, 0.8); }
   main section div img {
-    border: solid;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
     border-radius: 10px;
     margin: 2px 2px;
     padding: 4px 4px; }
@@ -116,12 +116,15 @@ main {
   line-height: 1.8rem;
   font-size: 1.2em; }
   .fig_center img {
-    width: 90%; }
+    width: 50%; }
 
 .fig_t:hover {
   transform: scale(1.1);
   cursor: pointer;
   transition: 0.5s; }
+
+.fig_txt {
+  padding-top: 10px; }
 
 .contacto_center {
   display: flex;
@@ -155,6 +158,16 @@ main {
   font-style: italic;
   color: white;
   text-shadow: 2px 2px 20px black; }
+
+.form_t {
+  margin: 10px; }
+
+.form_txt h2 {
+  color: black;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-style: italic; }
 
 form {
   max-width: 420px;
@@ -252,6 +265,30 @@ footer {
 .main_g {
   grid-area: main; }
 
+@media (min-width: 576px) {
+  c_grid {
+    grid-template-columns: 20vw 80vw;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "nav" "nav" "header" "header" "main main" "footer" "footer"; }
+  .nav_all {
+    background-color: #1c1c1c;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 16px; }
+  .fig_center {
+    text-align: center;
+    margin: 4px;
+    padding: 4px;
+    line-height: 1.8rem;
+    font-size: 1.2em; }
+    .fig_center img {
+      width: 90%; }
+  iframe {
+    width: 400px;
+    height: 300px; } }
+
 @media (min-width: 768px) {
   c_grid {
     grid-template-columns: 20vw 80vw;
@@ -311,7 +348,7 @@ h2 {
   justify-content: space-between;
   width: 100vw;
   height: 100vh;
-  padding-top: 300px;
+  padding-top: 250px;
   background-color: white; }
 
 .main {
@@ -325,18 +362,18 @@ h2 {
   justify-content: center;
   align-items: center; }
   .error p {
-    font-size: 8rem;
+    font-size: 7rem;
     font-weight: 800;
     text-align: center;
     color: black;
     padding-bottom: 10px; }
   .error h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
     color: #3e3e3e;
     padding-bottom: 5px; }
   .error h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     color: #3e3e3e;
     padding-bottom: 20px; }

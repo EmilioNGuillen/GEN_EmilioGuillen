@@ -3,7 +3,7 @@ main {
 	section {
 		div {
 			img {
-				border: solid;
+				box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
 				border-radius: 10px;
 				margin: 2px 2px;
 				padding: 4px 4px;
@@ -27,6 +27,7 @@ main {
 	justify-content: center;
 	align-items: center;
 	animation-delay: 0.2s;
+
 }
 
 .fig_center {
@@ -36,7 +37,7 @@ main {
 	line-height: 1.8rem;
 	font-size: $textMd;
 	img {
-		width: 90%;
+		width: 50%;
 	}
 }
 
@@ -48,6 +49,10 @@ main {
 	}
 }
 
+.fig_txt{
+	padding-top: 10px;
+}
+
 .contacto_center {
 	display: flex;
 	flex-direction: row;
@@ -57,7 +62,7 @@ main {
 	line-height: 2rem;
 }
 
-.form {
+.form{
 	background-image: url(../img/contacto/contactanos.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -84,4 +89,19 @@ main {
 	color: $color_5;
     text-shadow: 2px 2px 20px $color_2;
 
+}
+
+.form_t{
+	margin: 10px;
+	
+}
+
+.form_txt{
+	h2{
+		color: black;
+		text-align: center;
+		font-weight: 500;
+		margin-bottom: 20px;
+		font-style: italic;
+	}
 }
