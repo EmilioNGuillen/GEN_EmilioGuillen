@@ -1,2 +1,2 @@
 # GEN_EmilioGuillen
-Tienda de sneakers y streetwear
+GEN es una tienda de sneakers y streetwear.
